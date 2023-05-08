@@ -14,7 +14,7 @@ import Content from './content';
  *   28 | }
  *   29 | 
  */
-const EventNotFound = () => {
+const Event = () => {
     return (
         <div>
             <Content />
@@ -22,4 +22,4 @@ const EventNotFound = () => {
     )
 }
 
-export default EventNotFound;
+export default Event;

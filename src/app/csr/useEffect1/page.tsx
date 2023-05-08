@@ -10,7 +10,7 @@ Next.js (13.3.4) out of date (learn more)
 Unhandled Runtime Error
 Error: NEXT_NOT_FOUND
  */
-const useEffectNotFound1 = () => {
+const useEffect1 = () => {
     return (
         <div>
             <Content />
@@ -18,4 +18,4 @@ const useEffectNotFound1 = () => {
     )
 }
 
-export default useEffectNotFound1;
+export default useEffect1;

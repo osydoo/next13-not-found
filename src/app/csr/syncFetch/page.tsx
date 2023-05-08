@@ -14,7 +14,7 @@ import Content from './content';
  *   15 | }
  *   16 | )
  */
-const SyncNotFound = () => {
+const SyncFetch = () => {
     return (
         <div>
             <Content />
@@ -22,4 +22,4 @@ const SyncNotFound = () => {
     )
 }
 
-export default SyncNotFound;
+export default SyncFetch;

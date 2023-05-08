@@ -3,11 +3,11 @@
 |page|subPage|notFound() working point|success|etc|
 |---|---|---|---|---|
 |CSR|root|rendering component|:o:||
-||useEffectNotFound1|useEffect|:x:|useEffect dependency []|
-||useEffectNotFound2|useEffect triggered useState|:o:|useEffect dependency [data]|
+||useEffect1|useEffect|:x:|useEffect dependency []|
+||useEffect2|useEffect triggered useState|:o:|useEffect dependency [data]|
 ||axiosInterceptors|axios in try catch|:x:|axios.interceptors notFound() not working and throw error in try catch|
-||syncNotFound|axios.interceptors|:x:|This case only working notFound() in axios interceptors|
-||eventNotFound|click event|:x:||
+||syncFetch|axios.interceptors|:x:|This case only working notFound() in axios interceptors|
+||event|click event|:x:||
 |SSR|root|rendering component|:o:||
 ||axiosInterceptors|rendering component|:o:|axios.interceptors notFound() not working|
 ||syncAxiosInterceptors||:o:||

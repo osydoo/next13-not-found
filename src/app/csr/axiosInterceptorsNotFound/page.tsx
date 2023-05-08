@@ -14,7 +14,7 @@ import Content from './content';
  *   30 | }
  *   31 | 
  */
-const AxiosInterceptorsNotFound = () => {
+const AxiosInterceptors = () => {
     return (
         <div>
             <Content />
@@ -22,4 +22,4 @@ const AxiosInterceptorsNotFound = () => {
     )
 }
 
-export default AxiosInterceptorsNotFound;
+export default AxiosInterceptors;

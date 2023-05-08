@@ -5,7 +5,7 @@ import Content from './content';
  * @log interceptors error
  * @returns 404 Page
  */
-const UseEffectNotFound2 = async () => {
+const UseEffect2 = async () => {
     return (
         <div>
             <Content />
@@ -13,4 +13,4 @@ const UseEffectNotFound2 = async () => {
     )
 }
 
-export default UseEffectNotFound2;
+export default UseEffect2;
