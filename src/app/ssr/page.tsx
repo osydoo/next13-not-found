@@ -2,7 +2,7 @@ import axios from 'axios';
 import { notFound } from 'next/navigation';
 
 /**
- * @log error
+ * @server_log error
  * @returns 404 PAGE
  */
 const SSR = async () => {

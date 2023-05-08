@@ -9,17 +9,17 @@ axios.interceptors.response.use(
     function(err){
         if(err){
             console.log('interceptors')
-            notFound();
+            notFound(); // not working
         }
     }
 )
 /**
- * @log interceptors error
+ * @server_log interceptors error
  * @returns Rendering Page
  */
-const AxiosInterceptors = async () => {
+const AxiosInterceptors = () => {
     try{
-        await axios.get('http://127.0.0.1:3001/error'); // 404 error
+        axios.get('http://127.0.0.1:3001/error'); // 404 error
         console.log('success');
     }catch(e){
         console.log('error');
