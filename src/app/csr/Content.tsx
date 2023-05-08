@@ -1,9 +1,26 @@
 'use client'
-import axios from 'axios';
+import _axios from 'axios';
 import { notFound } from 'next/navigation';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
+const axios = _axios.create();
+axios.interceptors.response.use(
+    function(res){
+        return res
+    },
+    function(err){
+        if(err){
+            console.log('interceptors')
+            notFound(); // not working
+        }
+    }
+)
 
 const Content = () => {
+    const [data, setData] = useState('init');
+    if(data === 'error') {
+        notFound();
+    }
 
     useEffect(()=> {
         (async () => {
@@ -12,7 +29,7 @@ const Content = () => {
                 console.log('success');
             }catch(e){
                 console.log('error')
-                notFound()
+                setData('error')
             }
         })()
     }, [])
