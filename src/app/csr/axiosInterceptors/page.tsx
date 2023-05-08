@@ -1,5 +1,5 @@
 import _axios from 'axios';
-import Content from './Content';
+import Content from './content';
 
 /**
  * @log interceptors error

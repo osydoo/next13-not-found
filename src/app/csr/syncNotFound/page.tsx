@@ -1,5 +1,5 @@
 import _axios from 'axios';
-import Content from './Content';
+import Content from './content';
 
 /**
  * @log success error interceptors Uncaught (in promise) Error: NEXT_NOT_FOUND 
